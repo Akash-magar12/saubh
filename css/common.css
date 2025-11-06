@@ -1,4 +1,6 @@
-/* COMMON STYLES - Shared across all pages */
+/* =========================
+   COMMON STYLES
+========================= */
 * {
   margin: 0;
   padding: 0;
@@ -26,20 +28,13 @@ body {
   --text-gray: #666666;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Playfair Display", serif;
-}
-
 p {
   line-height: 1.6;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 header {
   position: sticky;
   top: 0;
@@ -56,99 +51,49 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.logo-text h2 {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #2c2c2c;
-  line-height: 1;
-  margin-bottom: 0.25rem;
-}
-
-.logo-text span {
-  font-size: 1rem;
-  font-weight: 500;
-  color: #4a4a4a;
-  letter-spacing: 0.05em;
-}
-
+/* Logo */
 .logo-text {
   display: flex;
   align-items: center;
   gap: 0.75rem;
 }
 
-/* Logo image */
-.logo-text img {
-  height: 45px;
-  width: auto;
-}
-
-/* Text block next to logo */
-.logo-text .text {
+.logo-text .logo-link {
   display: flex;
-  flex-direction: column;
-  line-height: 1.1;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: inherit;
 }
 
-/* “Saubhagya” heading */
-.logo-text h2 {
-  font-family: "Playfair Display", serif;
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: #2c2c2c;
-  margin: 0 0 0.25rem 0;
+.logo-text .logo-link img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
 }
 
-/* “Architects” subtext */
-.logo-text span {
-  font-family: "Inter", sans-serif;
+.logo-text .logo-link .text h2 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.logo-text .logo-link .text span {
+  display: block; /* make it a block element */
+  text-align: center; /* center the text */
+  width: 100%; /* take full width of the parent */
+  margin-top: 4px; /* small spacing from heading */
   font-size: 1rem;
-  font-weight: 500;
-  color: #4a4a4a;
-  letter-spacing: 0.05em;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .logo-text img {
-    height: 38px;
-  }
-
-  .logo-text h2 {
-    font-size: 1.1rem;
-  }
-
-  .logo-text span {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .logo-text img {
-    height: 32px;
-  }
-
-  .logo-text h2 {
-    font-size: 1rem;
-  }
-
-  .logo-text span {
-    font-size: 0.85rem;
-  }
-}
-
+/* NAVBAR */
 nav {
   display: flex;
   gap: 3rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -157,7 +102,7 @@ nav a {
   color: var(--dark);
   text-decoration: none;
   transition: color 0.3s ease;
-  padding-bottom: 4px; /* spacing for underline */
+  padding-bottom: 4px;
 }
 
 nav a::after {
@@ -175,49 +120,13 @@ nav a:hover {
   color: var(--gold);
 }
 
-nav a:hover::after {
-  width: 100%;
-}
-
+nav a:hover::after,
 nav a.active::after {
   width: 100%;
   background-color: var(--gold);
 }
-/* Logo link styling */
-.logo-text .logo-link {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem; /* space between image and text */
-  text-decoration: none; /* remove underline */
-  color: inherit; /* inherit text color */
-}
 
-/* Image size */
-.logo-text .logo-link img {
-  width: 50px; /* adjust as needed */
-  height: 50px;
-  object-fit: contain;
-}
-
-/* Text styling */
-.logo-text .logo-link .text h2 {
-  font-size: 1.5rem;
-  margin: 0;
-  font-weight: 700;
-}
-
-.logo-text .logo-link .text span {
-  font-size: 0.875rem;
-  display: block;
-  line-height: 1;
-}
-
-/* Optional: hover effect */
-.logo-text .logo-link:hover {
-  opacity: 0.85; /* subtle hover feedback */
-  transition: opacity 0.3s ease;
-}
-
+/* MOBILE MENU */
 .menu-toggle {
   display: none;
   background: none;
@@ -245,48 +154,46 @@ nav a.active::after {
   color: var(--gold);
 }
 
-/* CTA SECTION */
-.cta {
-  padding: 6rem 1.5rem;
-  background-color: var(--gold);
-  color: var(--white);
-  text-align: center;
-}
-
-.cta-container {
-  max-width: 1000px;
+/* =========================
+   HERO SECTION
+========================= */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1280px;
   margin: 0 auto;
+  padding: 2rem 1.5rem;
 }
 
-.cta h2 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
+.hero-container > div {
+  flex: 1 1 500px;
+}
+
+.hero-title {
+  font-size: 3rem;
   line-height: 1.2;
 }
 
-.cta p {
-  font-size: 1.125rem;
-  color: #fef3e2;
-  margin-bottom: 2.5rem;
-  line-height: 1.8;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+.hero-description {
+  font-size: 1rem;
+  margin: 1rem 0 2rem;
 }
 
-.btn-cta {
-  background-color: var(--white);
-  color: var(--gold);
-  padding: 1rem 2rem;
-  font-weight: 700;
-  font-size: 1.125rem;
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
-.btn-cta:hover {
-  background-color: #f0f0f0;
+/* Buttons */
+.button-group {
+  display: flex;
+  gap: 1rem;
 }
-/* BUTTONS */
+
 .btn {
   padding: 0.75rem 2rem;
   border-radius: 0.5rem;
@@ -320,7 +227,54 @@ nav a.active::after {
   color: var(--white);
 }
 
-/* FOOTER */
+/* CTA */
+.cta {
+  padding: 6rem 1.5rem;
+  background-color: var(--gold);
+  color: var(--white);
+  text-align: center;
+}
+
+.cta-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.btn-cta {
+  background-color: var(--white);
+  color: var(--gold);
+  padding: 1rem 2rem;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.btn-cta:hover {
+  background-color: #f0f0f0;
+}
+
+/* =========================
+   SERVICES SECTION
+========================= */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+/* =========================
+   FEATURED PROJECTS
+========================= */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+/* =========================
+   FOOTER
+========================= */
 footer {
   background-color: #f5f5f5;
   color: #555;
@@ -341,40 +295,36 @@ footer {
   border-bottom: 1px solid #ddd;
 }
 
-.footer-brand h4 {
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: #2c2c2c;
-  margin-bottom: 1rem;
-}
-
-.footer-brand p {
-  font-size: 0.875rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-  color: #666;
-}
-
-.social-links {
+/* Footer Brand */
+.footer-brand .logo-text {
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
-.social-links a {
-  color: #999;
-  text-decoration: none;
+.footer-brand img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.footer-brand .text h2 {
   font-size: 1.25rem;
-  transition: color 0.3s ease;
+  font-weight: 700;
+  color: var(--dark);
 }
 
-.social-links a:hover {
-  color: #2c2c2c;
+.footer-brand .text span {
+  font-size: 0.875rem;
+  color: #777;
+  letter-spacing: 0.03em;
+  margin-top: 2px;
 }
 
+/* Footer sections */
 .footer-section h4 {
   font-size: 0.95rem;
   font-weight: 600;
-  color: #2c2c2c;
   margin-bottom: 1rem;
   font-family: "Playfair Display", serif;
 }
@@ -390,123 +340,34 @@ footer {
 .footer-section ul li a {
   color: #666;
   text-decoration: none;
-  font-size: 0.875rem;
-  transition: color 0.3s ease;
 }
 
 .footer-section ul li a:hover {
   color: #2c2c2c;
 }
 
+/* Footer bottom */
 .footer-bottom {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
   font-size: 0.875rem;
   color: #999;
 }
 
-.footer-links {
-  display: flex;
-  gap: 1.5rem;
-}
-
 .footer-links a {
   color: #666;
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
   color: #2c2c2c;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  nav {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .button-group {
-    flex-direction: column;
-  }
-
-  .btn {
-    width: 100%;
-    text-align: center;
-  }
-
-  .footer-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-
-@media (max-width: 640px) {
-  .header-container {
-    padding: 1rem;
-  }
-
-  nav {
-    gap: 1rem;
-  }
-}
-
-/* WhatsApp Floating Chat Button */
-.whatsapp-wrapper {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  z-index: 999;
-}
-
-.whatsapp-chat {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background-color: #25d366;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 16px;
-  border-radius: 50px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  font-family: "Inter", sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.whatsapp-chat img {
-  width: 26px;
-  height: 26px;
-  filter: brightness(0) invert(1);
-}
-
-.whatsapp-chat:hover {
-  background-color: #20ba5a;
-  transform: scale(1.05);
-}
-
-/* Mobile Responsive */
-@media (max-width: 600px) {
-  .whatsapp-chat {
-    padding: 8px 12px;
-    font-size: 13px;
-    gap: 8px;
-  }
-
-  .whatsapp-chat img {
-    width: 22px;
-    height: 22px;
-  }
-}
-/* WhatsApp Floating Chat Button */
+/* =========================
+   WHATSAPP BUTTON
+========================= */
 .whatsapp-wrapper {
   position: fixed;
   bottom: 25px;
@@ -518,7 +379,7 @@ footer {
   display: flex;
   align-items: center;
   gap: 10px;
-  background-color: #25d366; /* WhatsApp green */
+  background-color: #25d366;
   color: #fff;
   text-decoration: none;
   padding: 10px 18px;
@@ -538,16 +399,123 @@ footer {
   background-color: #20ba5a;
   transform: scale(1.05);
 }
+.social-links a {
+  color: #666;
+}
+.social-links a:hover {
+  color: #2c2c2c;
+}
 
-/* Responsive */
-@media (max-width: 600px) {
-  .whatsapp-chat {
-    padding: 8px 12px;
-    font-size: 13px;
-    gap: 8px;
+/* =========================
+   RESPONSIVE BREAKPOINTS
+========================= */
+@media (max-width: 1024px) {
+  .logo-text .logo-link img {
+    width: 80px;
+    height: 80px;
   }
 
-  .whatsapp-chat i {
-    font-size: 20px;
+  .logo-text .logo-link .text h2 {
+    font-size: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-brand .logo-text {
+    gap: 0.75rem;
+  }
+
+  .footer-brand img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer-brand .text h2 {
+    font-size: 1.1rem;
+  }
+
+  .footer-brand .text span {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-text .logo-link img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .logo-text .logo-link .text h2 {
+    font-size: 1.3rem;
+  }
+
+  .logo-text .logo-link .text span {
+    font-size: 0.8rem;
+  }
+
+  .footer-brand .logo-text {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .footer-brand img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .footer-brand .text h2 {
+    font-size: 1rem;
+  }
+
+  .footer-brand .text span {
+    font-size: 0.75rem;
+  }
+
+  .hero-title {
+    font-size: 1.6rem;
+  }
+
+  .hero-description {
+    font-size: 0.85rem;
   }
 }

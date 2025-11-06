@@ -1,0 +1,162 @@
+/* ===============================
+   COMMON PROJECT STYLES
+=============================== */
+:root {
+  --gold: #8b6f47;
+  --white: #fff;
+  --dark: #2c2c2c;
+  --border-gray: #e0e0e0;
+  --light-gray: #f5f5f5;
+  --text-gray: #666;
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+/* ===============================
+   HEADER LOGO CENTER SPAN
+=============================== */
+.logo-text .logo-link .text span {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-top: 4px;
+  font-size: 1rem;
+}
+
+/* ===============================
+   PROJECT SECTION
+=============================== */
+.section.container,
+.project-section.container {
+  max-width: 1280px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+.project-header {
+  margin-bottom: 2rem;
+}
+
+.badge {
+  display: inline-block;
+  background-color: var(--gold);
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-title {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+
+.project-subtitle {
+  font-size: 1rem;
+  color: var(--text-gray);
+  margin-bottom: 2rem;
+}
+
+.project-hero img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.project-lead {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.divider {
+  border-bottom: 1px solid var(--border-gray);
+  margin: 2rem 0;
+}
+
+/* ===============================
+   GALLERY
+=============================== */
+.project-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.project-gallery a img {
+  width: 100%;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.project-gallery a:hover img {
+  transform: scale(1.05);
+}
+
+/* ===============================
+   LOCATION / NOTICE
+=============================== */
+.project-location {
+  margin-bottom: 3rem;
+}
+
+.project-location iframe {
+  width: 100%;
+  border: 0;
+  border-radius: 0.5rem;
+}
+
+/* ===============================
+   RESPONSIVE BREAKPOINTS
+=============================== */
+@media (max-width: 1024px) {
+  .project-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-title {
+    font-size: 2rem;
+  }
+
+  .project-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .project-lead {
+    font-size: 0.95rem;
+  }
+
+  .project-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .project-title {
+    font-size: 1.75rem;
+  }
+
+  .project-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .project-lead {
+    font-size: 0.9rem;
+  }
+
+  .project-gallery {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+}

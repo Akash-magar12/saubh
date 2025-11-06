@@ -193,11 +193,17 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
   cursor: pointer;
+  text-decoration: none; /* remove underline */
+  color: inherit; /* keep text color same */
 }
 
 .gallery-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 24px rgba(139, 111, 71, 0.15);
+}
+.gallery-card a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .gallery-image {

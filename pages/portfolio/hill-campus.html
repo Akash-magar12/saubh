@@ -1,35 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hill Campus — Saubhagya Architects</title>
-  <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap' rel='stylesheet'>
-  <link rel="stylesheet" href="../../assets/css/styles.css">
-</head>
-<body>
-  <header id="site-header" class="header"></header>
-  
-    <section class="section container">
-      <div class="badge">Education · 2025</div>
-      <h2>Hill Campus</h2>
-      <div class="sub">Case study</div>
-      <div class="card hero"><img src="https://images.pexels.com/photos/256150/pexels-photo-256150.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Hill Campus hero"></div>
-      <div style="height:10px"></div>
-      <p class="lead">This project explores a careful balance between structure, light and material. Our team developed a concept rooted in context and climate, then advanced it through rigorous drawings and details. The plan prioritizes simple circulation and comfortable proportions while the envelope controls glare and heat. Natural textures and a restrained palette deliver calm, while custom joinery brings a crafted precision. Performance targets informed each decision, from shading to ventilation. The result is a space that feels generous and usable every day, with flexibility for future change.</p>
-      <div class="hr"></div>
-      <h3>Gallery</h3>
-      <div class="gallery">
-        <a href="#" data-lightbox="https://images.pexels.com/photos/256150/pexels-photo-256150.jpeg?auto=compress&cs=tinysrgb&w=1200"><img src="https://images.pexels.com/photos/256150/pexels-photo-256150.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="gallery"></a><a href="#" data-lightbox="https://images.pexels.com/photos/256150/pexels-photo-256150.jpeg?auto=compress&cs=tinysrgb&w=1200"><img src="https://images.pexels.com/photos/256150/pexels-photo-256150.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="gallery"></a><a href="#" data-lightbox="https://images.pexels.com/photos/256150/pexels-photo-256150.jpeg?auto=compress&cs=tinysrgb&w=1200"><img src="https://images.pexels.com/photos/256150/pexels-photo-256150.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="gallery"></a><a href="#" data-lightbox="https://images.pexels.com/photos/256150/pexels-photo-256150.jpeg?auto=compress&cs=tinysrgb&w=1200"><img src="https://images.pexels.com/photos/256150/pexels-photo-256150.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="gallery"></a><a href="#" data-lightbox="https://images.pexels.com/photos/256150/pexels-photo-256150.jpeg?auto=compress&cs=tinysrgb&w=1200"><img src="https://images.pexels.com/photos/256150/pexels-photo-256150.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="gallery"></a><a href="#" data-lightbox="https://images.pexels.com/photos/256150/pexels-photo-256150.jpeg?auto=compress&cs=tinysrgb&w=1200"><img src="https://images.pexels.com/photos/256150/pexels-photo-256150.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="gallery"></a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hill Campus — Saubhagya Architects</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/project.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="header-container">
+        <div class="logo-text">
+          <a href="../../index.html" class="logo-link">
+            <img src="../../assets/logo.png" alt="Saubhagya Logo" />
+            <div class="text">
+              <h2>Saubhagya Architects</h2>
+              <span>Exceeding Expectations</span>
+            </div>
+          </a>
+        </div>
+
+        <nav>
+          <a href="../../index.html">Home</a>
+          <a href="../../about.html">About</a>
+          <a href="../../portfolio.html">Portfolio</a>
+          <a href="../../services.html">Services</a>
+          <a href="../../blog.html">Blog</a>
+          <a href="../../contact.html">Contact</a>
+        </nav>
+
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
       </div>
-      <div class="hr"></div>
-      <h3>Location</h3>
-      <div class="notice">Embed: <a href="https://maps.google.com/?q=Dehradun" target="_blank" rel="noopener">Open on Google Maps</a></div>
-      <div style="height:12px"></div>
-      <a class="btn gold" href="https://wa.me/919999999999?text=Hi%20Saubhagya%20Architects%20—%20Interested%20in%20Hill Campus" target="_blank" rel="noopener">WhatsApp about this project</a>
+
+      <div id="mobileMenu" class="mobile-menu" style="display: none">
+        <a href="../../index.html">Home</a>
+        <a href="../../about.html">About</a>
+        <a href="../../portfolio.html">Portfolio</a>
+        <a href="../../services.html">Services</a>
+        <a href="../../blog.html">Blog</a>
+        <a href="../../contact.html">Contact</a>
+      </div>
+    </header>
+
+    <!-- PROJECT SECTION -->
+    <section class="project-section container">
+      <!-- Badge & Title -->
+      <div class="project-header">
+        <span class="badge">Education · 2025</span>
+        <h1 class="project-title">Hill Campus</h1>
+        <p class="project-subtitle">Case Study</p>
+      </div>
+
+      <!-- Hero Image -->
+      <div class="project-hero">
+        <img src="../../assets/hillvilla.jpg" alt="Hill Campus hero" />
+      </div>
+
+      <!-- Description -->
+      <p class="project-lead">
+        This project explores a careful balance between structure, light, and
+        material. Our team developed a concept rooted in context and climate,
+        then advanced it through rigorous drawings and details. The plan
+        prioritizes simple circulation and comfortable proportions while the
+        envelope controls glare and heat. Natural textures and a restrained
+        palette deliver calm, while custom joinery brings a crafted precision.
+        Performance targets informed each decision, from shading to ventilation.
+        The result is a space that feels generous and usable every day, with
+        flexibility for future change.
+      </p>
+
+      <hr class="divider" />
+
+      <!-- Gallery -->
+      <h2 class="section-title">Gallery</h2>
+      <div class="project-gallery">
+        <a href="#" data-lightbox="hill"
+          ><img src="../../assets/hillvilla.jpg" alt="Gallery Image 1"
+        /></a>
+        <a href="#" data-lightbox="hill"
+          ><img src="../../assets/hillvilla.jpg" alt="Gallery Image 2"
+        /></a>
+        <a href="#" data-lightbox="hill"
+          ><img src="../../assets/hillvilla.jpg" alt="Gallery Image 3"
+        /></a>
+        <a href="#" data-lightbox="hill"
+          ><img src="../../assets/hillvilla.jpg" alt="Gallery Image 4"
+        /></a>
+      </div>
+
+      <hr class="divider" />
+
+      <!-- Location -->
+      <h2 class="section-title">Location</h2>
+      <div class="project-location">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3431.2470510451633!2d78.03218881503205!3d30.31649498178452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39091858abf1e6d9%3A0xa7b847d7a3073b9b!2sDehradun%2C%20Uttarakhand%2C%20India!5e0!3m2!1sen!2sus!4v1696600000000!5m2!1sen!2sus"
+          width="100%"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <!-- WhatsApp CTA -->
+      <div style="height: 12px"></div>
+      <a
+        class="btn btn-primary"
+        href="https://wa.me/919999999999?text=Hi%20Saubhagya%20Architects%20—%20Interested%20in%20Hill Campus"
+        target="_blank"
+        rel="noopener"
+      >
+        WhatsApp about this project
+      </a>
     </section>
-    
-  <footer id="site-footer"></footer>
-  <script src="../../assets/js/shared.js"></script>
-</body>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo" style="margin-bottom: 1rem">
+              <div class="logo-text">
+                <img src="../../assets/logo.png" alt="Saubhagya Logo" />
+                <div class="text">
+                  <h2>Saubhagya</h2>
+                  <span>Architects</span>
+                </div>
+              </div>
+            </div>
+            <p>
+              A boutique studio with a net-zero mindset and timeless design
+              principles.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="mailto:hello@saubhagya.com" aria-label="Email"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="services.html">Architecture</a></li>
+              <li><a href="services.html">Interiors</a></li>
+              <li><a href="services.html">Urban Design</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <ul>
+              <li>Dehradun, India</li>
+              <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+              <li>
+                <a href="mailto:hello@saubhagya.com">hello@saubhagya.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Saubhagya Architects. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Chat Button -->
+    <div class="whatsapp-wrapper">
+      <a
+        href="https://wa.me/919876543210"
+        target="_blank"
+        class="whatsapp-chat"
+        aria-label="Chat on WhatsApp"
+      >
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-text">Chat on WhatsApp</span>
+      </a>
+    </div>
+
+    <script src="../../script.js"></script>
+  </body>
 </html>
