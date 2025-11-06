@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Saubhagya Architects — Home</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="header-container">
+        <div class="logo-text">
+          <a href="index.html" class="logo-link">
+            <img src="./assets/logo.png" alt="Saubhagya Logo" />
+            <div class="text">
+              <h2>Saubhagya</h2>
+              <span>Architects</span>
+            </div>
+          </a>
+        </div>
+
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="services.html">Services</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      </div>
+
+      <div id="mobileMenu" class="mobile-menu" style="display: none">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="services.html">Services</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-container">
+        <div>
+          <div class="hero-badge">ARCHITECTURE · INTERIORS · URBAN</div>
+          <h1 class="hero-title">Distinctive spaces for ambitious clients</h1>
+          <p class="hero-description">
+            Expressive, timeless and buildable. From villas and residences to
+            workplace and cultural projects, we lead design, documents and
+            delivery.
+          </p>
+          <div class="button-group">
+            <a href="contact.html" class="btn btn-primary">Start a Project</a>
+            <a href="portfolio.html" class="btn btn-secondary"
+              >View Case Studies →</a
+            >
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="./assets/hero.jpg" alt="Modern Architecture" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services">
+      <div class="services-container">
+        <div class="section-header">
+          <h2>What we do</h2>
+          <p>
+            Six highlighted services. Click to explore details, galleries and
+            sub-services.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <a href="services.html#interior-design" class="service-card">
+            <div class="service-image">
+              <img src="./assets/interior.jpg" alt="Interior Design" />
+            </div>
+            <h3>Interior Design</h3>
+            <p>
+              Warm, functional interiors with custom furniture and lighting.
+            </p>
+          </a>
+
+          <a href="services.html#residential-architecture" class="service-card">
+            <div class="service-image">
+              <img
+                src="./assets/residential.jpg"
+                alt="Residential Architecture"
+              />
+            </div>
+            <h3>Residential Architecture</h3>
+            <p>Villas and apartments that balance light, privacy, and views.</p>
+          </a>
+
+          <a href="services.html#commercial-fit-outs" class="service-card">
+            <div class="service-image">
+              <img src="./assets/commercial.jpg" alt="Commercial Fit-outs" />
+            </div>
+            <h3>Commercial Fit-outs</h3>
+            <p>Offices and retail that align brand, ergonomics, and code.</p>
+          </a>
+          <a href="services.html#commercial-fit-outs" class="service-card">
+            <div class="service-image">
+              <img
+                src="./assets/WhatsApp Image 2025-10-29 at 12.42.00_7cc73a49.jpg"
+                alt="Commercial Fit-outs"
+              />
+            </div>
+            <h3>Landscape Design</h3>
+            <p>Courtyards and green roofs that cool, soften, and connect.</p>
+          </a>
+          <a href="services.html#commercial-fit-outs" class="service-card">
+            <div class="service-image">
+              <img
+                src="./assets/WhatsApp Image 2025-10-29 at 12.42.01_97875f2d.jpg"
+                alt="Commercial Fit-outs"
+              />
+            </div>
+            <h3>Sustainable Design</h3>
+            <p>
+              Passive strategies for comfort, lower bills, and lighter impact.
+            </p>
+          </a>
+          <a href="services.html#commercial-fit-outs" class="service-card">
+            <div class="service-image">
+              <img
+                src="./assets/WhatsApp Image 2025-10-29 at 12.42.04_ba63937f.jpg"
+                alt="Commercial Fit-outs"
+              />
+            </div>
+            <h3>Project Management</h3>
+            <p>Budgets, vendors, and timelines handled with accountability .</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="featured-projects">
+      <div class="featured-projects-container">
+        <div class="featured-header">
+          <h2>Featured Projects</h2>
+          <p>Expressive, timeless and buildable.</p>
+          <a href="portfolio.html" class="btn btn-secondary explore-btn"
+            >Explore all →</a
+          >
+        </div>
+
+        <div class="projects-grid">
+          <a href="portfolio.html#fjord-house" class="project-card">
+            <div class="project-image">
+              <img src="./assets/flo.jpg" alt="Fjord House" />
+            </div>
+            <h3>Fjord House</h3>
+            <p class="project-meta">Residential · 2025</p>
+          </a>
+
+          <a href="portfolio.html#atrium-office" class="project-card">
+            <div class="project-image">
+              <img src="./assets/atrium1.jpg" alt="Atrium Office" />
+            </div>
+            <h3>Atrium Office</h3>
+            <p class="project-meta">Workplace · 2024</p>
+          </a>
+
+          <a href="portfolio.html#court-museum" class="project-card">
+            <div class="project-image">
+              <img src="./assets/court.jpg" alt="Court Museum" />
+            </div>
+            <h3>Court Museum</h3>
+            <p class="project-meta">Cultural · 2024</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta">
+      <div class="cta-container">
+        <h2>Ready to start your project?</h2>
+        <p>
+          Let's collaborate to create distinctive spaces that define your vision
+          and stand the test of time.
+        </p>
+        <a href="contact.html" class="btn btn-cta">Get in Touch</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo" style="margin-bottom: 1rem">
+              <div class="logo-text">
+                <img src="./assets/logo.png" alt="Saubhagya Logo" />
+                <div class="text">
+                  <h2>Saubhagya</h2>
+                  <span>Architects</span>
+                </div>
+              </div>
+            </div>
+            <p>
+              A boutique studio with a net-zero mindset and timeless design
+              principles.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="mailto:hello@saubhagya.com" aria-label="Email"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="about.html">About</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="services.html">Architecture</a></li>
+              <li><a href="services.html">Interiors</a></li>
+              <li><a href="services.html">Urban Design</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <ul>
+              <li>Dehradun, India</li>
+              <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+              <li>
+                <a href="mailto:hello@saubhagya.com">hello@saubhagya.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Saubhagya Architects. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- WhatsApp Chat Button -->
+    <div class="whatsapp-wrapper">
+      <a
+        href="https://wa.me/919876543210"
+        target="_blank"
+        class="whatsapp-chat"
+        aria-label="Chat on WhatsApp"
+      >
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+          alt="Chat on WhatsApp"
+        />
+        <span class="whatsapp-text">Chat on WhatsApp</span>
+      </a>
+    </div>
+    <!-- WhatsApp Chat Button -->
+    <div class="whatsapp-wrapper">
+      <a
+        href="https://wa.me/919876543210"
+        target="_blank"
+        class="whatsapp-chat"
+        aria-label="Chat on WhatsApp"
+      >
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-text">Chat on WhatsApp</span>
+      </a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

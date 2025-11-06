@@ -1,0 +1,278 @@
+/* HOME PAGE STYLES */
+
+.hero {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  padding: 5rem 1.5rem;
+}
+
+.hero-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #fef3e2;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--gold);
+  margin-bottom: 1.5rem;
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  color: #666;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  max-width: 500px;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* SERVICES SECTION */
+.services {
+  padding: 6rem 1.5rem;
+  background-color: var(--white);
+}
+
+.services-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.section-header {
+  margin-bottom: 4rem;
+}
+
+.section-header h2 {
+  font-size: 3.5rem;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.section-header p {
+  color: #666;
+  font-size: 1.125rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-0.5rem);
+}
+
+.service-image {
+  width: 100%;
+  height: 250px;
+  background-color: #ddd;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.service-card:hover .service-image img {
+  transform: scale(1.1);
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.service-card p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* FEATURED PROJECTS SECTION */
+.featured-projects {
+  padding: 6rem 1.5rem;
+  background: linear-gradient(to bottom, var(--white), #fef9f3);
+}
+
+.featured-projects-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.featured-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.featured-header h2 {
+  font-size: 3.5rem;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.featured-header p {
+  color: #666;
+  flex: 1;
+  min-width: 200px;
+}
+
+.explore-btn {
+  white-space: nowrap;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-image {
+  width: 100%;
+  height: 300px;
+  background-color: #ddd;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.1);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.project-meta {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-image {
+    display: block;
+  }
+
+  .section-header h2,
+  .featured-header h2,
+  .cta h2 {
+    font-size: 2.5rem;
+  }
+
+  .featured-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .featured-header .explore-btn {
+    align-self: flex-start;
+  }
+
+  .services-grid,
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .services {
+    padding: 3rem 1rem;
+  }
+
+  .featured-projects {
+    padding: 3rem 1rem;
+  }
+
+  .cta {
+    padding: 3rem 1rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .section-header h2,
+  .featured-header h2,
+  .cta h2 {
+    font-size: 2rem;
+  }
+}
