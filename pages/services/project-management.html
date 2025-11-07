@@ -1,36 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Project Management — Saubhagya Architects</title>
-  <link href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap' rel='stylesheet'>
-  <link rel="stylesheet" href="../../assets/css/styles.css">
-</head>
-<body>
-  <header id="site-header" class="header"></header>
-  
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project Management — Saubhagya Architects</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/common.css" />
+    <link rel="stylesheet" href="../../css/servicePage.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="header-container">
+        <div class="logo-text">
+          <a href="../../index.html" class="logo-link">
+            <img src="../../assets/logo.png" alt="Saubhagya Logo" />
+            <div class="text">
+              <h2>Saubhagya Architects</h2>
+              <span>Exceeding Expectations</span>
+            </div>
+          </a>
+        </div>
+
+        <nav>
+          <a href="../../index.html">Home</a>
+          <a href="../../about.html">About</a>
+          <a href="../../portfolio.html">Portfolio</a>
+          <a href="../../services.html">Services</a>
+          <a href="../../blog.html">Blog</a>
+          <a href="../../contact.html">Contact</a>
+        </nav>
+
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      </div>
+
+      <div id="mobileMenu" class="mobile-menu" style="display: none">
+        <a href="../../index.html">Home</a>
+        <a href="../../about.html">About</a>
+        <a href="../../portfolio.html">Portfolio</a>
+        <a href="../../services.html">Services</a>
+        <a href="../../blog.html">Blog</a>
+        <a href="../../contact.html">Contact</a>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
     <section class="section container">
       <div class="badge">Service</div>
       <h2>Project Management</h2>
-      <p class="lead">Project Management at Saubhagya Architects focuses on clarity and comfort. We begin with a precise brief, translate it into layouts, and validate decisions through drawings and visuals. Materials are chosen for tactility and longevity, while services are coordinated early to avoid surprises. The outcome blends function with a calm, distinctive character that feels at home today and durable tomorrow.</p>
-      <div class="card hero"><img src="https://images.pexels.com/photos/544971/pexels-photo-544971.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Project Management hero"></div>
-      <div class="tag-img" data-tag="image-tag">image tag: project-management</div>
+      <p class="lead">
+        Project Management at Saubhagya Architects focuses on clarity and
+        comfort. We begin with a precise brief, translate it into layouts, and
+        validate decisions through drawings and visuals. Materials are chosen
+        for tactility and longevity, while services are coordinated early to
+        avoid surprises. The outcome blends function with a calm, distinctive
+        character that feels at home today and durable tomorrow.
+      </p>
+
+      <div class="card hero">
+        <img src="../../assets/project.jpg" alt="Project Management hero" />
+      </div>
+
+      <div class="tag-img" data-tag="image-tag">
+        image tag: project-management
+      </div>
+
       <div class="hr"></div>
+
       <h3>Gallery</h3>
       <div class="gallery">
-        <a href="#" data-lightbox="https://images.pexels.com/photos/544971/pexels-photo-544971.jpeg?auto=compress&cs=tinysrgb&w=1200"><img src="https://images.pexels.com/photos/544971/pexels-photo-544971.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Project Management"></a><a href="#" data-lightbox="https://images.pexels.com/photos/544971/pexels-photo-544971.jpeg?auto=compress&cs=tinysrgb&w=1200"><img src="https://images.pexels.com/photos/544971/pexels-photo-544971.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Project Management"></a><a href="#" data-lightbox="https://images.pexels.com/photos/544971/pexels-photo-544971.jpeg?auto=compress&cs=tinysrgb&w=1200"><img src="https://images.pexels.com/photos/544971/pexels-photo-544971.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Project Management"></a><a href="#" data-lightbox="https://images.pexels.com/photos/544971/pexels-photo-544971.jpeg?auto=compress&cs=tinysrgb&w=1200"><img src="https://images.pexels.com/photos/544971/pexels-photo-544971.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Project Management"></a>
+        <a href="#"
+          ><img src="../../assets/project.jpg" alt="Project Management"
+        /></a>
+        <a href="#"
+          ><img src="../../assets/project.jpg" alt="Project Management"
+        /></a>
+        <a href="#"
+          ><img src="../../assets/project.jpg" alt="Project Management"
+        /></a>
+        <a href="#"
+          ><img src="../../assets/project.jpg" alt="Project Management"
+        /></a>
       </div>
+
       <div class="hr"></div>
+
       <h3>What we do in project management</h3>
       <div class="grid cols-3">
-        <div class="card"><img src="https://images.pexels.com/photos/544971/pexels-photo-544971.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Scope A"><div class="body"><h3>Scope A</h3><p>An important component that adds value and clarity. We document each step with drawings and notes to keep decisions clear.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/544971/pexels-photo-544971.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Scope B"><div class="body"><h3>Scope B</h3><p>Technical coordination handled end‑to‑end. We document each step with drawings and notes to keep decisions clear.</p></div></div><div class="card"><img src="https://images.pexels.com/photos/544971/pexels-photo-544971.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Scope C"><div class="body"><h3>Scope C</h3><p>Finishing touches that elevate experience. We document each step with drawings and notes to keep decisions clear.</p></div></div>
+        <div class="card">
+          <img src="../../assets/project.jpg" alt="Scope A" />
+          <div class="body">
+            <h3>Scope A</h3>
+            <p>
+              An important component that adds value and clarity. We document
+              each step with drawings and notes to keep decisions clear.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="../../assets/project.jpg" alt="Scope B" />
+          <div class="body">
+            <h3>Scope B</h3>
+            <p>
+              Technical coordination handled end‑to‑end. We document each step
+              with drawings and notes to keep decisions clear.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="../../assets/project.jpg" alt="Scope C" />
+          <div class="body">
+            <h3>Scope C</h3>
+            <p>
+              Finishing touches that elevate experience. We document each step
+              with drawings and notes to keep decisions clear.
+            </p>
+          </div>
+        </div>
       </div>
-      <div style="height:12px"></div>
-      <a class="btn gold" href="https://wa.me/919999999999?text=Hi%20Saubhagya%20Architects%20—%20Enquiry:%20Project Management" target="_blank" rel="noopener">WhatsApp us</a>
+
+      <div style="height: 12px"></div>
+      <a
+        class="btn gold"
+        href="https://wa.me/919999999999?text=Hi%20Saubhagya%20Architects%20—%20Enquiry:%20Project Management"
+        target="_blank"
+        rel="noopener"
+        >WhatsApp us</a
+      >
     </section>
-    
-  <footer id="site-footer"></footer>
-  <script src="../../assets/js/shared.js"></script>
-</body>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo" style="margin-bottom: 1rem">
+              <div class="logo-text">
+                <img src="../../assets/logo.png" alt="Saubhagya Logo" />
+                <div class="text">
+                  <h2>Saubhagya</h2>
+                  <span>Architects</span>
+                </div>
+              </div>
+            </div>
+            <p>
+              A boutique studio with a net-zero mindset and timeless design
+              principles.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="Instagram">IG</a>
+              <a href="#" aria-label="LinkedIn">LI</a>
+              <a href="mailto:hello@saubhagya.com" aria-label="Email">@</a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Navigation</h4>
+            <ul>
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="../../services.html">Services</a></li>
+              <li><a href="../../portfolio.html">Portfolio</a></li>
+              <li><a href="../../about.html">About</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="../../services.html">Architecture</a></li>
+              <li><a href="../../services.html">Interiors</a></li>
+              <li><a href="../../services.html">Urban Design</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <ul>
+              <li>Dehradun, India</li>
+              <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+              <li>
+                <a href="mailto:hello@saubhagya.com">hello@saubhagya.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Saubhagya Architects. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../script.js"></script>
+  </body>
 </html>

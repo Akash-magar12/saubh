@@ -85,7 +85,7 @@ header {
   display: block; /* make it a block element */
   text-align: center; /* center the text */
   width: 100%; /* take full width of the parent */
-  margin-top: 4px; /* small spacing from heading */
+  margin-top: 1px; /* small spacing from heading */
   font-size: 1rem;
 }
 
@@ -379,7 +379,7 @@ footer {
   display: flex;
   align-items: center;
   gap: 10px;
-  background-color: #25d366;
+  background-color: #1da850;
   color: #fff;
   text-decoration: none;
   padding: 10px 18px;
@@ -401,6 +401,7 @@ footer {
 }
 .social-links a {
   color: #666;
+  margin-right: 10px;
 }
 .social-links a:hover {
   color: #2c2c2c;
