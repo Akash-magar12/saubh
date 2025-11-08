@@ -5,8 +5,7 @@
 /* HERO SECTION */
 .page-hero {
   position: relative;
-  background: url("../assets/project.jpg")
-    center/cover no-repeat;
+  background: url("../assets/project.jpg") center/cover no-repeat;
   text-align: center;
   padding: 6rem 1.5rem;
   color: #fff;
@@ -335,4 +334,14 @@
   .newsletter {
     padding: 3rem 1rem;
   }
+}
+/* Styling for the new "Latest Articles" heading */
+.grid-title {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem; /* You can adjust this size */
+  font-weight: 600;
+  color: #000; /* Or your primary heading color */
+  margin-top: 3rem; /* Adds space above it */
+  margin-bottom: 1.5rem; /* Adds space below it */
+  text-align: left; /* Or 'center' if you prefer */
 }

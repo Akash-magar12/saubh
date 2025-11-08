@@ -42,65 +42,6 @@
 }
 
 /* ============================
-   PORTFOLIO SECTION
-============================ */
-.portfolio-section {
-  padding: 6rem 1.5rem;
-  background-color: var(--white);
-}
-
-.portfolio-container,
-.services-container {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
-.portfolio-item {
-  margin-bottom: 6rem;
-  padding-bottom: 4rem;
-  border-bottom: 1px solid var(--border-gray);
-}
-
-.portfolio-item:last-child {
-  border-bottom: none;
-}
-
-.portfolio-item h2 {
-  font-size: 2.5rem;
-  color: var(--gold);
-  margin-bottom: 0.5rem;
-  font-weight: 700;
-  font-family: "Playfair Display", serif;
-}
-
-.project-meta {
-  font-size: 0.95rem;
-  color: #666;
-  margin-bottom: 2rem;
-}
-
-.portfolio-image {
-  width: 100%;
-  height: 400px;
-  border-radius: 1rem;
-  overflow: hidden;
-  margin-bottom: 2rem;
-}
-
-.portfolio-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.portfolio-item p {
-  font-size: 1rem;
-  color: #666;
-  line-height: 1.8;
-  margin-bottom: 2rem;
-}
-
-/* ============================
    CTA BUTTON STYLE
 ============================ */
 .btn-secondary {
@@ -128,14 +69,6 @@
   .page-hero h1 {
     font-size: 2.75rem;
   }
-
-  .portfolio-item h2 {
-    font-size: 2rem;
-  }
-
-  .portfolio-section {
-    padding: 4rem 1rem;
-  }
 }
 
 @media (max-width: 640px) {
@@ -145,18 +78,6 @@
 
   .page-hero h1 {
     font-size: 2rem;
-  }
-
-  .portfolio-section {
-    padding: 3rem 1rem;
-  }
-
-  .portfolio-item h2 {
-    font-size: 1.5rem;
-  }
-
-  .portfolio-image {
-    height: 220px;
   }
 }
 
