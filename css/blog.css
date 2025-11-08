@@ -32,7 +32,7 @@
   color: #ffffff;
   margin-bottom: 1rem;
   font-weight: 700;
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
 }
 
 .page-hero p {
@@ -249,7 +249,7 @@
   padding: 0.85rem 1rem;
   border: 1px solid var(--border-gray);
   border-radius: 0.5rem;
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
   font-size: 0.95rem;
   outline: none;
   transition: border-color 0.3s ease;
@@ -337,7 +337,7 @@
 }
 /* Styling for the new "Latest Articles" heading */
 .grid-title {
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
   font-size: 2rem; /* You can adjust this size */
   font-weight: 600;
   color: #000; /* Or your primary heading color */
