@@ -1,5 +1,5 @@
 /* HOME PAGE STYLES */
-
+/* 
 .hero {
   min-height: 70vh;
   display: flex;
@@ -60,6 +60,60 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+} */
+/* Container for the entire hero section */
+.hero-with-bg {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center; /* Vertically centers the container */
+  justify-content: center; /* Horizontally centers the container */
+  color: white;
+
+  /* Background image and overlay styles remain the same */
+  background-image: url("../assets/hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* The black overlay element (styles remain the same) */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.629);
+  z-index: 1;
+}
+
+/* Container for your text and buttons */
+.hero-container {
+  position: relative;
+  z-index: 2;
+  max-width: 900px; /* Increased max-width for better centering appearance */
+  padding: 40px;
+  /* Key change: Centers all inline content (text, buttons, badge) */
+  text-align: center;
+}
+
+/* Key change: Ensures button group aligns centrally */
+.button-group {
+  /* If the button group is a block element, text-align: center on the parent will work. 
+       If not, setting display: flex and justify-content: center is an alternative: */
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Adds space between the buttons */
+  margin-top: 30px; /* Space below the description */
+}
+
+/* Other text styles for contrast */
+.hero-title,
+.hero-badge,
+.hero-description {
+  color: white;
+  margin-left: auto; /* Ensures block elements like H1/P are centered */
+  margin-right: auto;
 }
 
 /* SERVICES SECTION */

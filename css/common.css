@@ -92,8 +92,8 @@ header {
   text-align: center;
   width: 100%;
   font-size: 1rem;
+  margin-top: -8px;
   color: var(--text-gray);
-  margin-top: 2px;
 }
 
 /* NAVBAR */
